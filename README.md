@@ -40,7 +40,7 @@ This project facilitates decentralized image upload and sharing on the blockchai
 4. Deploy the Solidity smart contract to an Ethereum testnet or local development environment.
    ```bash
    # Deploy Smart Contract
-   npx hardhat run scripts/deploy.js --network <network-name>
+   npx hardhat run scripts/deploy.js --network localhost
    ```
 5. Install dependencies for the React front end:
    ```bash

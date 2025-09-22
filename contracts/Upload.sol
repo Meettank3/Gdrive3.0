@@ -17,7 +17,7 @@ contract Upload {
         value[_user].push(_url);
     }
 
-    function add(address user) external  {
+    function allow(address user) external  {
         ownership[msg.sender][user] = true;
 
         if(previousData[msg.sender][user] == true) {
