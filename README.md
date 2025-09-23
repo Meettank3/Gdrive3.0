@@ -52,6 +52,7 @@ This project facilitates decentralized image upload and sharing on the blockchai
 6. Run the react application:
    ```bash
    # Start React Application
+   cd client
    npm start
    ```
    

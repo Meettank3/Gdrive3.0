@@ -30,7 +30,7 @@ const FileUplod =({account, provider, contract}) => {
 
             } catch(error){
                 alert("Error while uploading the file",error);
-                console.log(error);
+                //console.log(error);
             }
         }
     };
