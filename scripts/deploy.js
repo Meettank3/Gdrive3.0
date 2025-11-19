@@ -1,15 +1,14 @@
-const hre = require("hardhat");
-
 async function main() {
-  const Upload = await hre.ethers.getContractFactory("Upload");
-  const upload = await Upload.deploy();
+ // Hardhat automatically makes 'ethers' available globally here
+ const Upload = await ethers.getContractFactory("Upload"); 
+ const upload = await Upload.deploy();
 
-  await upload.waitForDeployment();
+ await upload.waitForDeployment();
 
-  console.log("Library deployed to:", await upload.getAddress());
+ console.log("Library deployed to:", await upload.getAddress());
 }
 
 main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
+ console.error(error);
+ process.exitCode = 1;
 });
