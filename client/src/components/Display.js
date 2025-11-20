@@ -33,7 +33,7 @@ try{
         imageHash = imageHash.substring(7); 
     } else {
         // If your contract returns a 6-character prefix like 'data:i', use:
-        // imageHash = imageHash.substring(6); 
+        imageHash = imageHash.substring(6); 
         // OR better yet, ensure your contract returns clean CIDs.
         
         // For now, assuming you only need to strip 'ipfs://'
